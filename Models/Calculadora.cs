@@ -28,11 +28,17 @@ namespace Calc.Models
             double pot = Math.Pow(x, y);
             Console.WriteLine($"{x} * {y} = {pot}");
         }
+        public void Seno(double angulo)
+        {
+            double radiano = angulo * Math.PI / 180;
+            double seno = Math.Sin(radiano);
+            Console.WriteLine($"Seno de {angulo} º = {Math.Round(seno, 4)}");
+        }
         public void Conseno(double angulo)
         {
             double radiano = angulo * Math.PI / 180;
             double conseno = Math.Cos(radiano);
-            Console.WriteLine($"Conseno de {angulo}º = {Math.Round(conseno, 4)}");
+            Console.WriteLine($"conseno de {angulo}º = {Math.Round(conseno, 4)}");
         }
         public void Tangente(double angulo)
         {
